@@ -1,0 +1,14 @@
+Attached is a sample program that generates prime numbers with an 
+executor. It uses InterruptiblePrimeNumberGenerator, which I gave you in 
+the beginning of this semester. It calls shutdown(), which allows 
+previously-submitted tasks (gen1 and gen2) to complete generating primes 
+before shutting down the executor. If you replace shutdown() with 
+shutdownNow(), the executor interrupts 2 worker threads to stop gen1 and 
+gen2. See how gen1 and gen2 behave upon thread interruption.
+
+The sample program uses an executor with a fixed-size thread pool. Try 
+to use other types of executors.
+
+Also, compare this sample program with PrimeNumberGenTest.java, which I 
+gave you, to see how the executor framework changes client code for 
+prime number generators.

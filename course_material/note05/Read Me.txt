@@ -1,0 +1,8 @@
+Sample programs are attached. Remove the extension ".txt" from 
+mc_test.sh.txt. (My SMTP server does not allow me to send out
+a shell script.) That's a Bash script to run MCTest. It uses the Unix 
+command "time" to measure program execution time. If you don't use Unix 
+on your machine, replace "time" with an equivalent command. If you don't 
+want to use the script, modify MCTest.java to measure program execution 
+time and run it manually. For example, call System.currentTimeMillis() 
+before and after doing multiplication
